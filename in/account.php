@@ -260,7 +260,15 @@
                   </div>
                   <div class="input-group" style="margin-top: 15px; margin-bottom: 12px;" id="baostk">
                   <span class="input-group-addon" style="background: white;"> &nbsp;Số tài khoản&nbsp; </span>
-                    <input class="form-control" class="form-control" type="number" id="sotaikhoan" placeholder="Số tài khoản (*)" value="<?php echo $u['banknumber']?>" />
+                  <input
+                        class="form-control"
+                        type="text"
+                        id="sotaikhoan"
+                        placeholder="Số tài khoản (*)"
+                        maxlength="20"
+                        value="<?php echo $u['banknumber']?>"
+                        oninput="this.value = this.value.replace(/[^0-9]/g, '')"
+                    />
                   </div>
                   
                   <button type="button" class="btn btn-success" id="capnhatbank">Cập nhật</button>
