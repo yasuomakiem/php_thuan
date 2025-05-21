@@ -193,6 +193,7 @@ if(isset($_GET['edit'])){
                           <option value="3" <?php if($rmn['level']==3){ echo 'selected=""';} ?>><?php echo capbac(3);?></option>
                           <option value="4" <?php if($rmn['level']==4){ echo 'selected=""';} ?>><?php echo capbac(4);?></option>
                           <option value="5" <?php if($rmn['level']==5){ echo 'selected=""';} ?>><?php echo capbac(5);?></option>
+                          <option value="6" <?php if($rmn['level']==6){ echo 'selected=""';} ?>><?php echo capbac(6);?></option>
                           <option value="7" <?php if($rmn['level']==7){ echo 'selected=""';} ?>>CEO</option>
                         </select>
                         <!--div class="checkbox" style="margin-top: 8px;">

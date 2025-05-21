@@ -52,6 +52,7 @@ function capbac($x){
     elseif($x==3){ $ten= 'Trưởng phòng KD';}
     elseif($x==4){ $ten= 'Giám đốc KD';}
     elseif($x==5){ $ten= 'GĐ Kim cương';}
+    elseif($x==6){ $ten= 'Tổng phân phối chiết khấu 47%';}
     else{$ten= 'CEO';}
     return $ten;
 }

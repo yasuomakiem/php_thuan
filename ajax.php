@@ -645,6 +645,14 @@ if(isset($_POST['typeform']) and $_POST['typeform']=='chuyentien'){
                                                         if($tim320>0){//ít nhất 1 thằng 320
                                                             //update ceo đã
                                                             $upu6=@mysqli_query($con,"update dh_user set level=6 where id=$ul[id]");
+                                                            if($tim320>2){//ít nhất 1 thằng 320
+                                                                //update ceo đã
+                                                                $tim640=@mysqli_num_rows(@mysqli_query($con,"select id from dh_user where idgioithieu=$ul[id] and sonpp>=640"));
+                                                                if($tim640>0){//ít nhất 1 thằng 320
+                                                                    //update ceo đã
+                                                                    $upu7=@mysqli_query($con,"update dh_user set level=7 where id=$ul[id]");
+                                                                }
+                                                            }
                                                         }
                                                     }
                                                 }
