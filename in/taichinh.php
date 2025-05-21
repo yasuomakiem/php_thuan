@@ -203,7 +203,7 @@ p.thongbaotrong{
                     <?php
                 }elseif($sodu_rut>0){
                     ?>
-                    <a type="button" class="btn btn-xs btn-primary" href="/m/taichinh/<?php echo md5($ngay)?>">Rút tiền</a> <a type="button" class="btn btn-xs btn-info" href="/m/taichinh/?chuyen">Chuyển</a>
+                    <a type="button" class="btn btn-xs btn-primary" href="/m/taichinh/<?php echo md5($ngay)?>">Rút tiền</a>
                     <?php
                 }
             }
@@ -510,102 +510,6 @@ p.thongbaotrong{
 </div>
 </div>    
     <?php }elseif(isset($_GET['chuyen'])){?>
-    <h3 class="titqt" style="font-size: 14px;"><a href="/m/cpanel/" style="color: #333;"><i class="fas fa-arrow-circle-left"></i> Home </a>/ <a href="/m/taichinh/" style="color: #333;"> Tài chính </a>/ Chuyển tiền</h3>
-<div class="boxshow">
-    <div class="statistic-col">
-    <div class="statistic-title">
-    <img src="images/withdraw.png">
-    <h4>Chuyển tiền tới ví "mua hàng"</h4>
-    </div>
-    <div class="statistic-content">
-    <form role="form">
-    <div id="formguityeucau">
-    <p>Số dư hiện tại: <b><?php echo number_format($u['virut'],0,',','.')?><sup>đ</sup></b>
-    <label style="float: right;font-weight: normal;margin-top: -2px;">
-    <input type="checkbox" value="1" id="fullmoney" /> chuyển hết
-    </label>
-    </p>
-      <div class="form-group" id="showsotienrut">
-        <label for="exampleInputEmail1">Số tiền chuyển</label>
-        <input type="number" class="form-control" max="<?php echo $u['virut']?>" id="sotienrut" placeholder="Nhập số tiền cần chuyển">
-      </div>
-      <p>Số tiền chuyển: <b style="color: red;" id="tienthucnhan">0 ₫</b></p>
-      <p style="font-size: 0.9em;font-style: italic;">Sau khi chuyển sang ví mua hàng tiền này chỉ có thể sử dụng để mua hàng, không thể rút hoặc chuyển ngược lại "ví rút"</p>
-      </div>
-      <button type="button" class="btn btn-primary" id="xacnhanchuyen">Xác nhận chuyển tiền</button>
-      <span id="loadingajax">Vui lòng chờ ... <img src="images/ajax-loader.gif" /></span>
-</form>
-<script language="javascript">
-    var sodu = <?php echo $u['virut']?>;
-    const VND = new Intl.NumberFormat('vi-VN', {
-      style: 'currency',
-      currency: 'VND',
-    });
-            document.getElementById('fullmoney').onclick = function(e){
-                if (this.checked){
-                    $('#sotienrut').val(sodu);
-                    var tienthucnhan = sodu;
-                    $('#tienthucnhan').html(VND.format(tienthucnhan));
-                    $('#xnrt').html(VND.format(tienthucnhan));
-                    $(".thongbaodo").hide();
-                }
-                else{
-                    $('#sotienrut').val(0);
-                    $('#tienthucnhan').html(VND.format(0));
-                }
-            };
-    $('#sotienrut').keyup(function(){
-        keyuptien();
-    });
-    function keyuptien(){
-        var sotienrut=$('#sotienrut').val();
-        if(sotienrut>sodu){
-            $(".thongbaodo").hide();
-            $("#showsotienrut").after('<p class="thongbaodo" style="margin-top: -15px;"><i class="fas fa-exclamation-triangle"></i> Số dư không đủ</p>');
-            setTimeout(function(){$(".thongbaodo").hide();}, 5000);
-            $('#sotienrut').val(sodu);
-            var tienthucnhan = sodu;
-            $('#tienthucnhan').html(VND.format(tienthucnhan));
-            keyuptien();
-        }else{
-            setTimeout(function(){$(".thongbaodo").hide();}, 5000);
-            var tienthucnhan = sotienrut;
-            $('#tienthucnhan').html(VND.format(tienthucnhan));
-        }
-    }
-    
-    $('#xacnhanchuyen').click(function(){
-        var sotienrut=$('#sotienrut').val();
-        $('#xacnhanchuyen').hide();
-            $('#loadingajax').show();
-            $.ajax({
-                        url : "ajax.php",
-                        type : "post", 
-                        dateType:"text", 
-                        data : { 
-                             sotienrut : sotienrut,
-                             typeform : "chuyentien"
-                        },
-                        success : function (result2){
-                            var trave = Number(result2);
-                            $('#loadingajax').hide();
-                            if(trave==0){
-                                $("#showmaemail").after('<p class="thongbaodo" style="margin-top: -15px;"><i class="fas fa-exclamation-triangle"></i> Có lỗi, vui lòng làm lại</p>');
-                                setTimeout(function(){$(".thongbaodo").hide();}, 5000);
-                                $('#xacnhanchuyen').show();
-                            }else{
-                                $('.thongbaoemail').html('<p style="color: #06a10f;"><i class="far fa-check-circle fa-3x"></i></p><p style="color: #06a10f;">Lệnh chuyển tiền đã được thực hiện</p>');
-                                
-                                $('#xacnhanchuyen').hide();
-                                window.location.href = '/m/taichinh/';
-                            }
-                        }
-                    });
-    })
-</script>
-</div>
-</div>
-</div>    
     <?php }else{
 $today = new DateTime();
         $firstDayOfWeek1 = $today->modify('this week')->modify('monday');
