@@ -329,21 +329,9 @@ if(isset($_GET['edit'])){
                     <td style="padding-top: 36px;font-weight: bold;color: #2196f3;"><?php  echo $rmns['fullname']; ?>    
                     <?php }
                     $j1=0;$j2=0;
-                    if($rmns['docquyentinh']!=0){
-                        $timtinh=@mysqli_fetch_assoc(@mysqli_query($con,"select * from tinh where id=$rmns[docquyentinh]"));
-                        echo '<p>Độc quyền tại <b>'.$timtinh['loai'].' '.$timtinh['ten'].'</b></p>';
-                        $j1=1;
-                    }
                     if($rmns['docquyenhuyen']!=0){
                         $timhuyen=@mysqli_fetch_assoc(@mysqli_query($con,"select * from huyen where id=$rmns[docquyenhuyen]"));
                         echo '<p>Độc quyền tại <b>'.$timhuyen['loai'].' '.$timhuyen['ten'].'</b></p>';
-                        //tim xem tinh dẫ có người độc quyền chưa
-                        if(@mysqli_num_rows(@mysqli_query($con,"select id from dh_user where docquyentinh=$rmns[tinh]"))>0){
-                            $j2=1;
-                        }else{
-                            $j2=0;
-                        }
-                        
                     }
                     if($j1+$j2<2){
                         echo '<p style="font-weight: normal;padding-top: 10px;"><a style="color: red;font-style: italic;font-size: 0.9em;" href="/docquyen.php?user='.$rmns['phone'].'"><i class="fab fa-ups"></i> Kích hoạt độc quyền</a></p>';

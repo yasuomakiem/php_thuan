@@ -3,7 +3,7 @@ session_start();
 require_once('include/connect.php');
 require_once('include/function.php');
 require_once('include/session.php');
-$tit='Quản lý độc quyền tỉnh, huyện';
+$tit='Quản lý độc quyền huyện';
 
 ?>
 <!DOCTYPE html>
@@ -99,7 +99,7 @@ $tit='Quản lý độc quyền tỉnh, huyện';
         <p>&nbsp;</p>
         <div class="tit"><i class="fas fa-landmark"></i> Đã setup độc quyền</div>
         <?php
-            $list=@mysqli_query($con,"select * from dh_user where docquyentinh>0 or docquyenhuyen>0 order by id asc");
+            $list=@mysqli_query($con,"select * from dh_user where docquyenhuyen>0 order by id asc");
             if(@mysqli_num_rows($list)==0){
                 ?>
                 <div class="text-center">
@@ -114,7 +114,7 @@ $tit='Quản lý độc quyền tỉnh, huyện';
                 <div class="table-responsive">
                   <table class="table">
                     <tr>
-                        <th>#</th><th>Thành viên</th><th>Độc quyền tỉnh</th><th>Độc quyền huyện</th>
+                        <th>#</th><th>Thành viên</th><th>Độc quyền huyện</th>
                     </tr>
                     <?php while($rlist=@mysqli_fetch_assoc($list)){
                         
@@ -123,19 +123,6 @@ $tit='Quản lý độc quyền tỉnh, huyện';
                         <td><?php echo $i; ?></td>
                         <td>
                         <i class="fas fa-user"></i> <?php echo $rlist['fullname'];?>
-                        </td>
-                        <td>
-                        <?php 
-                        if($rlist['docquyentinh']>0){
-                            $htinh=@mysqli_fetch_assoc(@mysqli_query($con,"select * from tinh where id=$rlist[docquyentinh]"));
-                            $stvtinh=@mysqli_num_rows(@mysqli_query($con,"select id from dh_user where tinh=$rlist[tinh]"));
-                            echo '<p><b>'.$htinh['loai'].' '.$htinh['ten'].'</b></p>';
-                            echo '<p><i>('.$stvtinh.' thành viên)</i></p>';
-                            ?>
-                            <p><a style="color: red;" href="up.php?table=dh_user&loai=docquyentinh&up=0&id=<?php echo $rlist['id'];?>"><i class="fas fa-trash-alt"></i> Xóa độc quyền</a></p>
-                            <?php
-                        }
-                        ?>
                         </td>
                         <td>
                         <?php 

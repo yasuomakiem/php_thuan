@@ -67,14 +67,6 @@ if(isset($_POST['typeform']) and $_POST['typeform']=='kiemtrauser_docquyen'){
     $in=@mysqli_query($con,"select * from dh_user where phone='$phoneuser'");
     if(@mysqli_num_rows($in)==1){
         $uus=@mysqli_fetch_assoc($in);
-        $dqtinh=@mysqli_query($con,"select fullname from dh_user where docquyentinh=$uus[tinh]");
-        $tentinh=@mysqli_fetch_assoc(@mysqli_query($con,"select * from tinh where id=$uus[tinh]"));
-        if(@mysqli_num_rows($dqtinh)>0){
-            $rdqtinh=@mysqli_fetch_assoc($dqtinh);
-            echo '<p style="color:#333"><i class="fas fa-check"></i> <b>'.$tentinh['ten'].'</b> đã có độc quyền là <b>'.$rdqtinh['fullname'].'</b></p>';
-        }else{
-            echo '<p style="color:#4caf50"><a href="up.php?table=dh_user&loai=docquyentinh&up='.$uus['tinh'].'&id='.$uus['id'].'"><i class="fab fa-ups"></i> Kích hoạt <b>'.$uus['fullname'].'</b> độc quyền tỉnh/TP tại <b>'.$tentinh['ten'].'</b></a></p>';
-        }
         $dqhuyen=@mysqli_query($con,"select fullname from dh_user where docquyenhuyen=$uus[huyen]");
         $tenhuyen=@mysqli_fetch_assoc(@mysqli_query($con,"select * from huyen where id=$uus[huyen]"));
         if(@mysqli_num_rows($dqhuyen)>0){

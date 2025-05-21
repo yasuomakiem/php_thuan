@@ -23,7 +23,6 @@ if(isset($_POST['capnhat'])){
     $ruttoithieu=intval($_POST['ruttoithieu']);
     $dkhuongdan = intval($_POST['dkhuongdan']);
     $dkquanlycapcao = intval($_POST['dkquanlycapcao']);
-    $phantramdocquyentinh=intval($_POST['phantramdocquyentinh']);
     $phantramdocquyenhuyen=intval($_POST['phantramdocquyenhuyen']);
     if($_FILES['image']['name']){
         $tenanh=$_FILES['image']['name'];
@@ -48,7 +47,7 @@ if(isset($_POST['capnhat'])){
     $des=strip_tags($_POST['des'],'');
     $pt_ruttien=intval($_POST['pt_ruttien']);
     $up="update dh_user set favicon='$tenanh',kichhoatctv=$kichhoatctv,phantramctv=$phantramctv,kichhoatnpp=$kichhoatnpp,phantramnpp=$phantramnpp,phantramf1=$phantramf1,phantramf2=$phantramf2,tai=$tai,ruttoithieu=$ruttoithieu,footer1=N'$footer1',dkhuongdan=$dkhuongdan,dkquanlycapcao=$dkquanlycapcao,pt_ruttien=$pt_ruttien,viettatteam=N'$viettatteam',email='$email',zalo=N'$zalo',youtube=N'$youtube',facebook=N'$facebook',logo='$logo'
-    ,footer=N'$footer',tit=N'$tit',des=N'$des',phantramdocquyentinh=$phantramdocquyentinh,phantramdocquyenhuyen=$phantramdocquyenhuyen where id=1";
+    ,footer=N'$footer',tit=N'$tit',des=N'$des',phantramdocquyenhuyen=$phantramdocquyenhuyen where id=1";
     $qup=@mysqli_query($con,$up);
     if($qup){
         $tim2="select * from dh_user where id=1";$q=@mysqli_query($con,$tim2);$r=@mysqli_fetch_assoc($q);
@@ -233,14 +232,6 @@ $tit="Cài đặt hệ thống";
                     <div class="clearfix"></div>
                 </div>
                 <div class="form-group">
-                    <label class="col-sm-4 control-label">Phần trăm độc quyền tỉnh: </label>
-                    <div class="col-sm-8">
-                        <input class="form-control" name="phantramdocquyentinh" value="<?php echo $r['phantramdocquyentinh']; ?>" />
-                        <p class="help-block"><sup>(*)</sup>Phần trăm hưởng khi có 1 thành viên nạp tiền mà họ thuộc tỉnh độc quyền</p>
-                    </div>
-                    <div class="clearfix"></div>
-                </div>
-                <div class="form-group">
                     <label class="col-sm-4 control-label">Phần trăm độc quyền huyện: </label>
                     <div class="col-sm-8">
                         <input class="form-control" name="phantramdocquyenhuyen" value="<?php echo $r['phantramdocquyenhuyen']; ?>" />
@@ -252,7 +243,7 @@ $tit="Cài đặt hệ thống";
                     <label class="col-sm-4 control-label">Tái nạp: </label>
                     <div class="col-sm-8">
                         <input class="form-control" name="tai" value="<?php echo $r['tai']; ?>" />
-                        <p class="help-block"><sup>(*)</sup>Số tiền phải nạp tối thiểu hàng tháng đối với các chức danh trên Nhà phân phối và độc quyền tỉnh, huyện</p>
+                        <p class="help-block"><sup>(*)</sup>Số tiền phải nạp tối thiểu hàng tháng đối với các chức danh trên Nhà phân phối và độc quyền huyện</p>
                     </div>
                     <div class="clearfix"></div>
                 </div>

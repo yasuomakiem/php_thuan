@@ -758,9 +758,9 @@ $timnap=@mysqli_fetch_assoc(@mysqli_query($con,"select SUM(sotien) tong from lic
                                     <div class="total"><?php echo number_format($timhhql['tong'],0,',','.');?><sup>đ</sup></div>
                                         <div class="title">Hoa hồng Rank</div>
                                     </div>
-                                </div>    
+                                </div>
                                 <?php }?>
-                                <?php if($u['docquyentinh']>0 or $u['docquyenhuyen']>0 ){$timhhql=@mysqli_fetch_assoc(@mysqli_query($con,"select SUM(sotien) tong from lichsutien where idu=$u[id] and loai=0 and khoan =7  $themdk"));?>
+                                <?php if($u['docquyenhuyen']>0 ){$timhhql=@mysqli_fetch_assoc(@mysqli_query($con,"select SUM(sotien) tong from lichsutien where idu=$u[id] and loai=0 and khoan =7  $themdk"));?>
                                 <div class="statistic-group">
                                     <div class="statistic-group-left">
                                         <img src="images/statistical.svg">
@@ -769,7 +769,7 @@ $timnap=@mysqli_fetch_assoc(@mysqli_query($con,"select SUM(sotien) tong from lic
                                     <div class="total"><?php echo number_format($timhhql['tong'],0,',','.');?><sup>đ</sup></div>
                                         <div class="title">Hoa hồng độc quyền</div>
                                     </div>
-                                </div>    
+                                </div>
                                 <?php }?>
                             </div>
     </div>
