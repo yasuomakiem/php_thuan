@@ -1,0 +1,1 @@
+{"result":{"text":"rightwards arrow with H 2 O on top"},"status":"ok"}

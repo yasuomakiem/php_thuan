@@ -1,0 +1,1 @@
+{"result":{"text":"z cubed plus i equals 0"},"status":"ok"}

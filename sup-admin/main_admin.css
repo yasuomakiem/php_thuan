@@ -1,0 +1,216 @@
+*{margin: 0;padding: 0;}
+body{font-size: 13px; font-family: arial, fantasy, time new roman; color: #606060;}
+a{text-decoration: none;}
+#head_big{
+    width: 100%;
+    height: 102px;
+    background: url(image/topbanner.png);
+    border-bottom: 4px solid #00A629;
+}
+#head{
+    width: 1200px;
+    margin: 0 auto;
+    height: 102px;
+    background: url(image/bg_topbanner.png);
+    background-size: 100% 100%;
+}
+#head h2{
+    padding:20px 10px;
+    border-style: none;
+    text-decoration: none;
+    width: 225px;
+    margin-top: 20px;
+    text-align: center;
+    font: bold 15px arial;
+    float: left;
+    background: none repeat scroll 0% 0% #009325;
+    color: rgb(255, 255, 255);
+    border-radius: 6px;
+    box-shadow: 3px 6px 4px #006A1B;
+}
+#head .tt{
+    width: 250px;
+    float: right;
+    text-align: right;
+    line-height: 23px;
+}
+#head .tt a:link,#head .tt a:visited{
+    text-decoration: none;
+    color: olive;
+}
+#head .tt a:hover{
+    text-decoration: none;
+    color: #FF8000;
+}
+#main{
+    width: 1200px;
+    margin: 30px auto;
+}
+a.phai{
+    float: right;
+    padding: 5px 10px;
+    background: #2196F3;
+    color: white;
+    border-radius: 13px;
+    font-size: 14px;
+    line-height: 20px;
+}
+#left{
+    width: 198px;
+    float: left;
+    border: 1px solid #E2E2E2;
+    border-radius: 8px;
+}
+#left .tit{
+    width: 188px;
+    height: 32px;
+    background: url(image/bg_left_tit.png);
+    background-size: 100% 100%;
+    line-height: 32px;
+    font-size: 12px;
+    padding-left: 10px;
+    color: white;
+    font-weight: bold;
+}
+#left ul{}
+#left ul li{list-style: none;background: url(image/star_no_underline.png) no-repeat left;background-size: 12px 40%; background-position: 3px; padding: 8px 0 8px 20px; border-bottom: 1px solid #EAEAEA;}
+#left ul li:hover{background: url(image/icon_left_host2.png) no-repeat left; background-position: 0px;padding: 8px 0 8px 30px; background-color: #EBEBEB;}
+#left ul li a:link,#left ul li a:visited{
+    color: #383838;
+}
+#left ul li a:hover{
+    color: #FF8000;
+}
+#right{
+    width: 970px;
+    border: 1px solid #D1D1D1;
+    border-radius: 15px;
+    padding: 10px;
+    float: right;
+    margin-bottom: 10px;
+}
+#right .tit{
+    width: 940px;
+    height: 35px;
+    line-height: 35px;
+    padding-left: 30px;
+    background: url(image/star_no_underline.png) no-repeat left;color: rgb(81, 142, 20);font-size: 18px;
+    border-bottom: 1px dotted #009525;
+}
+#right .nhacnho{
+    width: 800px;
+    font-size: 13px;
+    margin: 20px auto;
+    text-align: justify;
+}
+#right #form table th{
+    text-align: right;
+    width: 200px;
+    padding-right: 10px;
+}
+#right #form table th span{color: red;}
+#right #form table td input{
+    width: 280px;
+    height: 30px;
+    padding: 0px 10px;
+    border: 1px solid rgb(180, 179, 179);
+    border-radius: 5px;
+}
+#right #form table td select{
+    width: 302px;
+    height: 30px;
+    padding: 6px 0px;
+    border: 1px solid rgb(180, 179, 179);
+    border-radius: 5px;
+}
+#right #form table td select option{padding: 5px; background: #EAEAEA;}
+#right #form table td textarea{
+    width: 280px;
+    height: 100px;
+    padding: 0px 10px;
+    border: 1px solid rgb(180, 179, 179);
+    border-radius: 5px;
+}
+#right #form table td {
+    text-align: left;
+    padding: 5px;
+}
+#right #form table td input[type="submit"]{
+    border-style: none;
+    text-decoration: none;
+    width: 155px;
+    height: 28px;
+    text-align: center;
+    font: bold 12px arial;
+    background: none repeat scroll 0% 0% teal;
+    color: rgb(255, 255, 255);
+    border-radius: 3px;
+    box-shadow: 0px 6px 0px #005E5E;
+}
+#right #form table td input[type="submit"]:hover{
+    border-style: none;
+    text-decoration: none;
+    width: 155px;
+    height: 28px;
+    text-align: center;
+    font: bold 12px arial;
+    background: none repeat scroll 0% 0% #009D9D;
+    color: rgb(255, 255, 255);
+    border-radius: 3px;
+    box-shadow: 0px 6px 0px #007979;
+}
+#right .danhsach table{
+    margin: 10px auto;
+    border-collapse: collapse;
+    width: 100%;
+}
+#right .danhsach table td{
+    padding: 7px 5px;
+    border: 1px solid rgb(226, 226, 226);
+    text-align: center;
+}
+#right .danhsach table td a.sua{
+    background: url(image/icon-edit.png) no-repeat left;
+    padding: 5px 0 5px 20px;
+    color: red;
+}
+#right .danhsach table td a.xoa{
+    background: url(image/icon-del.png) no-repeat left;
+    padding: 5px 0 5px 20px;
+    color: red;
+}
+#right .danhsach table th{
+    padding: 6px 0px;
+    background: none repeat scroll 0% 0% rgb(235, 235, 235);
+    border: 1px solid rgb(223, 223, 223);
+}
+#footer{
+    width: 100%;
+    margin: 10px auto;
+    border-radius: 10px;
+    background: #00A629;
+    height: 50px;
+    box-shadow: 0px 8px 5px gray;
+}
+#tabletr{
+        color: #E0E0E0;
+    }
+    #tabletr td {padding: 3px 1px;}
+    #tabletr td a:link,#tabletr td a:visited{
+        background: none repeat scroll 0% 0% rgb(72, 72, 72);
+        color: rgb(255, 255, 255);
+        font-family: Tahoma,Geneva,sans-serif;
+        font-size: 11px;
+        font-weight: 700;
+        padding: 5px 10px;
+        border-radius: 3px 3px 3px 3px;
+    }
+    #tabletr td a:hover{
+        background: none repeat scroll 0% 0%  silver;
+        color: #CE6700;
+        font-family: Tahoma,Geneva,sans-serif;
+        font-size: 11px;
+        font-weight: 700;
+        padding: 5px 10px;
+        border-radius: 3px 3px 3px 3px;
+    }

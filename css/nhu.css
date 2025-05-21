@@ -1,0 +1,421 @@
+.breadcrumb-trail.breadcrumbs .item-current{
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #008848;
+}
+.breadcrumb-trail.breadcrumbs .item-cat{
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #4F4F4F;
+}
+.bg-red{
+	display: inline-block !important;
+}
+
+.col-md-3 .name a{
+	display: block; 
+	position: absolute; 
+	background-color: #008848; 
+	color: #fff; 
+	text-transform: uppercase; 
+	top: 0; 
+	left: 50%; 
+	-moz-transform: translate(-50%, -50%); 
+	-webkit-transform: translate(-50%, -50%); 
+	transform: translate(-50%, -50%);
+    padding: 8px 25px;
+    z-index: 10;
+    white-space: nowrap;
+}
+.col-md-3 .excerpt.description{
+	color: #fff;
+    padding: 50px 30px;
+    line-height: 26px;
+    font-size: 16px;
+    position: absolute;
+    top: 0px;
+}
+.main .contract{
+	border-radius: 7px;
+	border: 1px solid #008848;
+}
+.main .contract .title h3{
+	text-transform: uppercase;
+	font-weight: bold;
+    color: #008848;
+    text-align: center;
+    margin-bottom: 25px;
+    margin-top: 30px;
+}
+.main .contract .des-telephone{
+	text-align: center;
+    margin-top: 60px;
+}
+.main .contract .des-telephone span{
+	color: #fff;
+	text-align: center;
+}
+.main .contract .content tr td{
+	border: none !important;
+}
+.main .contract .content tr th{
+	border: none !important;
+}
+.main .contract .phone{
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    padding: 8px;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 14px;
+}
+.main .contract .phone span{
+	color: #008848;
+}
+.main .contract .payment-dress{
+	background-color: #008848;
+    color: #fff;
+    padding: 10px 16px;
+    border-radius: 5px;
+    border: none;
+    text-transform: uppercase;
+    margin-top: 16px;
+    font-size: 17px;
+}
+.main .contract.tc .content .table-responsive{
+	border-radius: 6px;
+}
+.main .contract.tc .content .table thead{
+	background-color: #008848;
+    color: #fff;
+    border-top-left-radius: 15px;
+}
+.main .contract.tc .content .table thead th{
+	text-align: center;
+}
+.main .contract.tc .content .table tbody tr{
+	text-align: center;
+}
+.main .contract.tc .content .table tbody th{
+	text-align: center;
+}
+.main .contract.tc .content .table tbody{
+	background-color: #f8f7f7;
+}
+.main .contract.tc .content tr td{
+	border-top: 1px solid #ddd !important;
+}
+.main .guide.col-md-6 .des-fecredit{
+    color: #fff;
+    text-align: center;
+    border: 1px solid rgba(255,255,255,0.6);
+    padding: 20px;
+    font-size: 16px;
+}
+.main .guide.col-md-6 .view-guide{
+	text-align: center;
+}
+.main .guide.col-md-6 button{
+    background-color: #008848;
+    color: #fff;
+    padding: 10px 16px;
+    border-radius: 5px;
+    border: none;
+    text-transform: uppercase;
+    margin-top: 16px;
+    font-size: 17px;
+}
+.main.guide-register{
+	padding-top: 50px;
+    padding-bottom: 35px;
+}
+.page-banner.view-tractor .news-banner-latter{
+	bottom: 180px;
+}
+#header .head-secound .right select{
+    border: none;
+}
+.menu-menu-page-products-money-container ul li a.active{
+    color: #008848;
+}
+.menu-menu-motorbyke-container ul li a.active{
+    color: #008848;
+}
+ul.lsn li a.active{
+    color: #008848;
+}
+
+li.active1 a span.menu-image-title{
+    background-color: #008848;
+    color: #fff;
+    text-align: center;
+    display: inline-block;
+    width: 150px;
+    border-right: none;
+    padding: 8px 0;
+    white-space: nowrap;
+    border-radius: 5px;
+    font-weight: 500;
+}
+li.active1 a{
+    border-right: none !important;
+}
+
+/**
+Css Breadcrumbs
+**/
+.breadcrumbs .item-parent{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #4F4F4F;
+    padding: 0px 5px;
+}
+
+/** Css map **/
+.wpsl-store-below #wpsl-result-list{
+    display: none;
+}
+
+/* Css menu Product */
+.main.main-product-cash-descriptions .menu-middle ul li:last-child a{
+    display: inline-block;
+    padding: 0px 40px;
+    color: #fff;
+    font-weight: 600;
+    line-height: 30px;
+    white-space: nowrap;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background-color: #008848;
+    /* -webkit-transition: all .3s ease; */
+    -moz-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+.main.main-product-motorbike-descriptions .menu-middle ul li:last-child a{
+    display: inline-block;
+    padding: 0px 40px;
+    color: #fff;
+    font-weight: 600;
+    line-height: 30px;
+    white-space: nowrap;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background-color: #008848;
+    /* -webkit-transition: all .3s ease; */
+    -moz-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+.main.main-product-cash-descriptions .menu-middle ul li:nth-child(3) a{
+    border: none;
+}
+.menu-middle ul li:last-child a{
+    border: none;
+}
+#main .menu-middle ul li:last-child a{
+    display: inline-block;
+    padding: 0px 40px;
+    color: #fff;
+    font-weight: 600;
+    line-height: 30px;
+    white-space: nowrap;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background-color: #008848;
+    /* -webkit-transition: all .3s ease; */
+    -moz-transition: all .3s ease;
+    transition: all .3s ease;
+}
+#main .menu-middle ul li:nth-child(3) a{
+    border: none;
+}
+
+/* Css Carrer */
+.lsn.list-job-content li.list-job-content-item a.active{
+    color: #fff;
+}
+/* Css map */
+.wpsl-search{
+    position: absolute;
+    z-index: 9;
+    background-color: #008848;
+}
+#main .main-map:before{
+    box-shadow: none !important;
+}
+#wpsl-search-wrap .wpsl-input label{
+    display: none;
+}
+#wpsl-search-btn, #wpsl-search-wrap input{
+    display: none;
+}
+.wpsl-search-btn-wrap{
+    display: none;
+}
+#wpsl-gmap{
+    position: initial !important;
+}
+.wpsl-search{
+    background-color: transparent;
+}
+#wpsl-search-wrap{
+    width: auto !important;
+    background-color: #008848;
+    padding-top: 7px;
+    margin-top: -5px;
+}
+#wpsl-search-wrap div{
+    margin-right: 0px !important;
+}
+
+/* Css Submenu Carrer map */
+.submenu-program.menu-middle{
+    background-color: #008848;
+}
+.submenu-program.menu-middle ul li a{
+    color: #fff;
+    text-transform: none;
+}
+.submenu-program.menu-middle ul li a:last-child{
+    /*border-right: none;*/
+}
+.submenu-program.menu-middle ul li{
+    padding: 0px 15px;
+}
+.main-caree-map .page-section.one .box-content{
+    margin: 100px 0;
+}
+
+.breadcrumb-trail .bread-page{
+    text-transform: uppercase;
+    color: #008848;
+    font-weight: bold;
+}
+.breadcrumb-trail .separator .fa-angle-right{
+    margin-left: 7px;
+    margin-right: 7px;
+}
+
+.result-money .number_value{
+    font-size: 26px;
+    color: #008848;
+    font-weight: 600;
+}
+.page-faq-main .menu-middle ul li a {
+    padding: 0px 15px;
+}
+.name.cat_news a{
+    display: block;
+    position: absolute;
+    background-color: #008848;
+    color: #fff;
+    text-transform: uppercase;
+    top: 0;
+    left: 50%;
+    -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    padding: 8px 25px;
+    z-index: 10;
+    white-space: nowrap;
+}
+.menu-menu-motorbyke-container ul li:nth-child(3) a{
+    border-right: none;
+}
+
+.breadcrumbs .bread-current.bread-cat{
+    color: #008848;
+}
+.menu-middle.categories li.col-md-3 a.active{
+    color: #008848;
+}
+.breadcrumb-trail .item-current .bread-current{
+    color: #008848;
+}
+.breadcrumb-trail span.item-current span{
+    color: #008848;
+}
+.menu-menu-faq-container ul li a.active{
+    color: #008848;
+}
+/*.faq-list ul li:first-child{
+    background-color: #008848;
+    color: #fff;
+}*/
+
+.guide-pay ul li:first-child{
+    color: #00864c;
+}
+.guide-pay ul li a{
+    border-right: 2px solid #c1c1c1 !important;
+}
+.guide-pay ul li:nth-child(4) a{
+    border-right: none !important;
+}
+.guide-pay ul li:last-child a{
+    border-right: none !important;
+}
+
+.faq-collapse .faq-item-content .bottom .row{
+    display: none;
+}
+.menu-middle.categories ul li a.active{
+    color: #008848;
+}
+
+.menu-middle.guide_card ul li a.active{
+    color: #008848;
+}
+.page-banner .page-label p.overwrite{
+    padding: 0px 150px;
+}
+
+.tab-content .tab-pane .col-md-offset-1.col-xs-12{
+    margin-left: 2.333333%;
+}
+
+/*.menu-middle ul li:last-child a.active{
+    background-color: #008848;
+    line-height: 30px;
+    padding: 0px 40px;
+    border-radius: 4px;
+    font-weight: 600;
+    display: inline-block;
+    color: #fff;
+}*/
+
+.popup-form form input.btn.btn-one-1.ttu{
+    line-height: 14px;
+    padding-left: 13px;
+    display: initial;
+}
+#filedrag input[type="file"]{
+    border: none;
+}
+
+#issua4 p.label-step{
+    display: none;
+}
+#issua4 .step-options{
+    display: none !important;
+}
+#issua4 .slider-item.slider-month{
+    display: none;
+}
+#issua4 .slider-item.slider-money{
+    display: none;
+}
+#issua4 .result-money{
+    display: none;
+}
+#issua4 .note{
+    display: none;
+}
+#issua4 .step-card{
+    margin-top: -120px;
+}

@@ -1,0 +1,45 @@
+.cay{
+    padding: 10px;
+    background: white;
+    border-radius: 6px;
+    font-family: "UT", Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+}
+    ul.list-genealogy{margin:0 0 8px 0;list-style-type:none}
+    ul.list-genealogy li{float:left;margin-right:5px;display:block}
+    ul.list-genealogy li a{display:block;float:left;padding:3px 8px 2px;border:1px solid #d9d9d9;color:#00014E;font-size:1em;text-transform:uppercase;background:#FFFACD}
+    ul.list-genealogy li.ui-genealogys-selected a{border:1px solid #a63700;background:#982100;color:#fff}
+    .filetree span.male,.filetree span.female,span.default{padding:1px 0 1px 16px}
+    .filetree span.male{background:url(../images/icon/male.png) 0 0 no-repeat}
+    .filetree span.female{background:url(../images/icon/female.png) 0 0 no-repeat}
+    .filetree span.default{background:url(../images/icon/default.png) 0 0 no-repeat}
+    .treeview,.treeview ul{list-style:none;margin:0;padding:0}
+    .treeview ul{}
+    .treeview .hitarea{background:url(../images/icon/treeview-default.gif) -64px -25px no-repeat;cursor:pointer;float:left;height:16px;margin-left:-16px;width:16px}
+    .hitarea{display:inline;float:none}
+    .treeview li{background:url(../images/icon/treeview-default-line.gif) 0 0 no-repeat;margin:0;padding:3px 0 3px 16px}
+    .treeview a.selected{background-color:#eee}#treecontrol{display:none;margin:1em 0}
+    .treeview .hover{color:red;cursor:pointer}
+    .treeview li.collapsable,.treeview li.expandable{background-position:0 -176px}
+    .treeview .expandable-hitarea{background-position:-80px -3px}
+    .treeview li.last{background-position:0 -1766px}
+    .treeview li.lastCollapsable,.treeview li.lastExpandable{background-image:url(../images/icon/treeview-default.gif)}
+    .treeview li.lastCollapsable{background-position:0 -111px}
+    .treeview li.lastExpandable{background-position:-32px -67px}
+    .treeview div.lastCollapsable-hitarea,.treeview div.lastExpandable-hitarea{background-position:0}
+    .treeview-red li{background-image:url(../../js/jquery/images/treeview-red-line.gif)}
+    .treeview-red .hitarea,.treeview-red li.lastCollapsable,.treeview-red li.lastExpandable{background-image:url(../../js/jquery/images/treeview-red.gif)}
+    .treeview-black li{background-image:url(../../js/jquery/images/treeview-black-line.gif)}
+    .treeview-black .hitarea,.treeview-black li.lastCollapsable,.treeview-black li.lastExpandable{background-image:url(../../js/jquery/images/treeview-black.gif)}
+    .treeview-gray li{background-image:url(../../js/jquery/images/treeview-gray-line.gif)}
+    .treeview-gray .hitarea,.treeview-gray li.lastCollapsable,.treeview-gray li.lastExpandable{background-image:url(../../js/jquery/images/treeview-gray.gif)}
+    .treeview-famfamfam li{background-image:url(../../js/jquery/images/treeview-famfamfam-line.gif)}
+    .treeview-famfamfam .hitarea,.treeview-famfamfam li.lastCollapsable,.treeview-famfamfam li.lastExpandable{background-image:url(../../js/jquery/images/treeview-famfamfam.gif)}
+    .filetree li{padding:3px 0 2px 16px}
+    .filetree span.folder,.filetree span.file{display:block;padding:1px 0 1px 16px}
+    .filetree span.folder{background:url(../../js/jquery/images/folder.gif) 0 0 no-repeat}
+    .filetree li.expandable span.folder{background:url(../../js/jquery/images/folder-closed.gif) 0 0 no-repeat}
+    .filetree span.file{background:url(../../js/jquery/images/file.gif) 0 0 no-repeat}
+    
+    .treeview ul a:link,.treeview ul a:visited{text-decoration: none; color: #006666;}
+    .treeview ul a:hover{text-decoration: none; color: #D76B00;}

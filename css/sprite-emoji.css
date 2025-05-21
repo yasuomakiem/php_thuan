@@ -1,0 +1,610 @@
+.sprite-emoji {
+    background-image: url('../img/sprite-emoji.png');
+    background-repeat: no-repeat;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.sprite-emoji:hover {
+    border: 1px solid rgba(65,77,84,.23);
+}
+
+.sprite-emoji-100 {
+    width: 26px;
+    height: 26px;
+    background-position: -5px -5px;
+}
+
+.sprite-emoji-1_down {
+    width: 26px;
+    height: 26px;
+    background-position: -41px -5px;
+}
+
+.sprite-emoji-1_up {
+    width: 26px;
+    height: 26px;
+    background-position: -77px -5px;
+}
+
+.sprite-emoji-airplane {
+    width: 26px;
+    height: 26px;
+    background-position: -113px -5px;
+}
+
+.sprite-emoji-alarm_clock {
+    width: 26px;
+    height: 26px;
+    background-position: -149px -5px;
+}
+
+.sprite-emoji-alien {
+    width: 26px;
+    height: 26px;
+    background-position: -185px -5px;
+}
+
+.sprite-emoji-angel {
+    width: 26px;
+    height: 26px;
+    background-position: -221px -5px;
+}
+
+.sprite-emoji-angry {
+    width: 26px;
+    height: 26px;
+    background-position: -257px -5px;
+}
+
+.sprite-emoji-anguished {
+    width: 26px;
+    height: 26px;
+    background-position: -293px -5px;
+}
+
+.sprite-emoji-ant {
+    width: 26px;
+    height: 26px;
+    background-position: -329px -5px;
+}
+
+.sprite-emoji-apple {
+    width: 26px;
+    height: 26px;
+    background-position: -365px -5px;
+}
+
+.sprite-emoji-art {
+    width: 26px;
+    height: 26px;
+    background-position: -401px -5px;
+}
+
+.sprite-emoji-baby {
+    width: 26px;
+    height: 26px;
+    background-position: -437px -5px;
+}
+
+.sprite-emoji-balloon {
+    width: 26px;
+    height: 26px;
+    background-position: -473px -5px;
+}
+
+.sprite-emoji-banana {
+    width: 26px;
+    height: 26px;
+    background-position: -509px -5px;
+}
+
+.sprite-emoji-bath {
+    width: 26px;
+    height: 26px;
+    background-position: -545px -5px;
+}
+
+.sprite-emoji-battery {
+    width: 26px;
+    height: 26px;
+    background-position: -581px -5px;
+}
+
+.sprite-emoji-bear {
+    width: 26px;
+    height: 26px;
+    background-position: -617px -5px;
+}
+
+.sprite-emoji-bee {
+    width: 26px;
+    height: 26px;
+    background-position: -653px -5px;
+}
+
+.sprite-emoji-beers {
+    width: 26px;
+    height: 26px;
+    background-position: -689px -5px;
+}
+
+.sprite-emoji-bike {
+    width: 26px;
+    height: 26px;
+    background-position: -725px -5px;
+}
+
+.sprite-emoji-bikini {
+    width: 26px;
+    height: 26px;
+    background-position: -761px -5px;
+}
+
+.sprite-emoji-birthday {
+    width: 26px;
+    height: 26px;
+    background-position: -797px -5px;
+}
+
+.sprite-emoji-blue_heart {
+    width: 26px;
+    height: 26px;
+    background-position: -833px -5px;
+}
+
+.sprite-emoji-blush {
+    width: 26px;
+    height: 26px;
+    background-position: -869px -5px;
+}
+
+.sprite-emoji-boar {
+    width: 26px;
+    height: 26px;
+    background-position: -905px -5px;
+}
+
+.sprite-emoji-bomb {
+    width: 26px;
+    height: 26px;
+    background-position: -941px -5px;
+}
+
+.sprite-emoji-bowtie {
+    width: 26px;
+    height: 26px;
+    background-position: -977px -5px;
+}
+
+.sprite-emoji-broken_heart {
+    width: 26px;
+    height: 26px;
+    background-position: -1013px -5px;
+}
+
+.sprite-emoji-cactus {
+    width: 26px;
+    height: 26px;
+    background-position: -1049px -5px;
+}
+
+.sprite-emoji-candy {
+    width: 26px;
+    height: 26px;
+    background-position: -1085px -5px;
+}
+
+.sprite-emoji-cat2 {
+    width: 26px;
+    height: 26px;
+    background-position: -1121px -5px;
+}
+
+.sprite-emoji-cherry_blossom {
+    width: 26px;
+    height: 26px;
+    background-position: -1157px -5px;
+}
+
+.sprite-emoji-chicken {
+    width: 26px;
+    height: 26px;
+    background-position: -1193px -5px;
+}
+
+.sprite-emoji-christmas_tree {
+    width: 26px;
+    height: 26px;
+    background-position: -1229px -5px;
+}
+
+.sprite-emoji-clap {
+    width: 26px;
+    height: 26px;
+    background-position: -1265px -5px;
+}
+
+.sprite-emoji-coffee {
+    width: 26px;
+    height: 26px;
+    background-position: -1301px -5px;
+}
+
+.sprite-emoji-cold_sweat {
+    width: 26px;
+    height: 26px;
+    background-position: -1337px -5px;
+}
+
+.sprite-emoji-confounded {
+    width: 26px;
+    height: 26px;
+    background-position: -1373px -5px;
+}
+
+.sprite-emoji-confused {
+    width: 26px;
+    height: 26px;
+    background-position: -1409px -5px;
+}
+
+.sprite-emoji-couplekiss {
+    width: 26px;
+    height: 26px;
+    background-position: -1445px -5px;
+}
+
+.sprite-emoji-cow {
+    width: 26px;
+    height: 26px;
+    background-position: -1481px -5px;
+}
+
+.sprite-emoji-cry {
+    width: 26px;
+    height: 26px;
+    background-position: -1517px -5px;
+}
+
+.sprite-emoji-cupid {
+    width: 26px;
+    height: 26px;
+    background-position: -1553px -5px;
+}
+
+.sprite-emoji-dart {
+    width: 26px;
+    height: 26px;
+    background-position: -1589px -5px;
+}
+
+.sprite-emoji-disappointed {
+    width: 26px;
+    height: 26px;
+    background-position: -1625px -5px;
+}
+
+.sprite-emoji-disappointed_relieved {
+    width: 26px;
+    height: 26px;
+    background-position: -1661px -5px;
+}
+
+.sprite-emoji-dizzy_face {
+    width: 26px;
+    height: 26px;
+    background-position: -1697px -5px;
+}
+
+.sprite-emoji-dog {
+    width: 26px;
+    height: 26px;
+    background-position: -1733px -5px;
+}
+
+.sprite-emoji-dollar {
+    width: 26px;
+    height: 26px;
+    background-position: -1769px -5px;
+}
+
+.sprite-emoji-expressionless {
+    width: 26px;
+    height: 26px;
+    background-position: -1805px -5px;
+}
+
+.sprite-emoji-facepunch {
+    width: 26px;
+    height: 26px;
+    background-position: -1841px -5px;
+}
+
+.sprite-emoji-fearful {
+    width: 26px;
+    height: 26px;
+    background-position: -1877px -5px;
+}
+
+.sprite-emoji-flushed {
+    width: 26px;
+    height: 26px;
+    background-position: -1913px -5px;
+}
+
+.sprite-emoji-fork_and_knife {
+    width: 26px;
+    height: 26px;
+    background-position: -1949px -5px;
+}
+
+.sprite-emoji-frog {
+    width: 26px;
+    height: 26px;
+    background-position: -1985px -5px;
+}
+
+.sprite-emoji-fu {
+    width: 26px;
+    height: 26px;
+    background-position: -2021px -5px;
+}
+
+.sprite-emoji-full_moon_with_face {
+    width: 26px;
+    height: 26px;
+    background-position: -2057px -5px;
+}
+
+.sprite-emoji-ghost {
+    width: 26px;
+    height: 26px;
+    background-position: -2093px -5px;
+}
+
+.sprite-emoji-gift_heart {
+    width: 26px;
+    height: 26px;
+    background-position: -2129px -5px;
+}
+
+.sprite-emoji-grin {
+    width: 26px;
+    height: 26px;
+    background-position: -2245px -5px;
+}
+
+.sprite-emoji-grinning {
+    width: 26px;
+    height: 26px;
+    background-position: -2281px -5px;
+}
+
+.sprite-emoji-gun {
+    width: 26px;
+    height: 26px;
+    background-position: -2317px -5px;
+}
+
+.sprite-emoji-hand {
+    width: 26px;
+    height: 26px;
+    background-position: -2353px -5px;
+}
+
+.sprite-emoji-heart {
+    width: 26px;
+    height: 26px;
+    background-position: -2389px -5px;
+}
+
+.sprite-emoji-heart_eyes {
+    width: 26px;
+    height: 26px;
+    background-position: -2425px -5px;
+}
+
+.sprite-emoji-hushed {
+    width: 26px;
+    height: 26px;
+    background-position: -2461px -5px;
+}
+
+.sprite-emoji-innocent {
+    width: 26px;
+    height: 26px;
+    background-position: -2497px -5px;
+}
+
+.sprite-emoji-japanese_ogre {
+    width: 26px;
+    height: 26px;
+    background-position: -2533px -5px;
+}
+
+.sprite-emoji-joy {
+    width: 26px;
+    height: 26px;
+    background-position: -2569px -5px;
+}
+
+.sprite-emoji-key {
+    width: 26px;
+    height: 26px;
+    background-position: -2605px -5px;
+}
+
+.sprite-emoji-kiss {
+    width: 26px;
+    height: 26px;
+    background-position: -2641px -5px;
+}
+
+.sprite-emoji-kissing_face {
+    width: 26px;
+    height: 26px;
+    background-position: -2677px -5px;
+}
+
+.sprite-emoji-kissing_heart {
+    width: 26px;
+    height: 26px;
+    background-position: -2713px -5px;
+}
+
+.sprite-emoji-last_quarter_moon_with_face {
+    width: 26px;
+    height: 26px;
+    background-position: -2749px -5px;
+}
+
+.sprite-emoji-laughing {
+    width: 26px;
+    height: 26px;
+    background-position: -2785px -5px;
+}
+
+.sprite-emoji-lock {
+    width: 26px;
+    height: 26px;
+    background-position: -2861px -5px;
+}
+
+.sprite-emoji-loudspeaker {
+    width: 26px;
+    height: 26px;
+    background-position: -2897px -5px;
+}
+
+.sprite-emoji-love_letter {
+    width: 26px;
+    height: 26px;
+    background-position: -2933px -5px;
+}
+
+.sprite-emoji-mag {
+    width: 26px;
+    height: 26px;
+    background-position: -2969px -5px;
+}
+
+.sprite-emoji-mask {
+    width: 26px;
+    height: 26px;
+    background-position: -3005px -5px;
+}
+
+.sprite-emoji-moyai {
+    width: 26px;
+    height: 26px;
+    background-position: -3041px -5px;
+}
+
+.sprite-emoji-muscle {
+    width: 26px;
+    height: 26px;
+    background-position: -3077px -5px;
+}
+
+.sprite-emoji-neckbeard {
+    width: 26px;
+    height: 26px;
+    background-position: -3113px -5px;
+}
+
+.sprite-emoji-neutral_face {
+    width: 26px;
+    height: 26px;
+    background-position: -3149px -5px;
+}
+
+.sprite-emoji-new_moon_with_face {
+    width: 26px;
+    height: 26px;
+    background-position: -3185px -5px;
+}
+
+.sprite-emoji-no_mouth {
+    width: 26px;
+    height: 26px;
+    background-position: -3221px -5px;
+}
+
+.sprite-emoji-ok_hand {
+    width: 26px;
+    height: 26px;
+    background-position: -3257px -5px;
+}
+
+.sprite-emoji-panda_face {
+    width: 26px;
+    height: 26px;
+    background-position: -3293px -5px;
+}
+
+.sprite-emoji-pensive {
+    width: 26px;
+    height: 26px;
+    background-position: -3329px -5px;
+}
+
+.sprite-emoji-pig {
+    width: 26px;
+    height: 26px;
+    background-position: -3365px -5px;
+}
+
+.sprite-emoji-pill {
+    width: 26px;
+    height: 26px;
+    background-position: -3401px -5px;
+}
+
+.sprite-emoji-punch {
+    width: 26px;
+    height: 26px;
+    background-position: -3437px -5px;
+}
+
+.sprite-emoji-purple_heart {
+    width: 26px;
+    height: 26px;
+    background-position: -3473px -5px;
+}
+
+.sprite-emoji-question {
+    width: 26px;
+    height: 26px;
+    background-position: -3509px -5px;
+}
+
+.sprite-emoji-rage {
+    width: 26px;
+    height: 26px;
+    background-position: -3545px -5px;
+}
+
+.sprite-emoji-rage1 {
+    width: 26px;
+    height: 26px;
+    background-position: -3581px -5px;
+}
+
+.sprite-emoji-raised_hand {
+    width: 26px;
+    height: 26px;
+    background-position: -3617px -5px;
+}
+
+.sprite-emoji-ramen {
+    width: 26px;
+    height: 26px;
+    background-position: -3653px -5px;
+}
+
+.sprite-emoji-relieved {
+    width: 26px;
+    height: 26px;
+    background-position: -3689px -5px;
+}

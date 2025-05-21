@@ -1,0 +1,56 @@
+/* 
+Theme Name: Theme FE Credit
+Theme URI: http://timeuniversal.vn
+Author: Time Universal
+Author URI: http://blog.timeuniversal.vn
+Description: Designed by Time Universal Communications
+Version: 0.0.1
+License: Theme basic
+tags: ones-columns, two-columns, framework theme, starter theme, customize
+Textdomain: fe 
+*/
+@import "fonts-roboto-mono.css";
+@import "fonts-opensans.css";
+/*@import "assets/css/fonts-roboto.css";*/
+@import "addons.css";
+@import "bootstrap.min.css";
+@import "font-awesome.min.css";
+@import "helpers.css";
+@import "swiper.min.css";
+@import "main.css";
+@import "nhu.css";
+@import "thanh.css";
+@import "thanhnt.css";
+@import "binhnp.css";
+@import "responsive.css";
+@font-face{font-family:'UTMWedding';src:url("UTMWedding.ttf") format("opentype")}
+#main .main-selects-issua .btn-submit-issua{
+	padding: 5px;
+    font-size: 20px;
+}
+span.field-request{
+	color: red;
+}
+.category-khuyen-mai .categories-thumbnails,
+.category-news .categories-thumbnails{
+	height: 45px;
+}
+.category-khuyen-mai .name.cat_news a,
+.category-news .name.cat_news a{
+	top: 15px;
+}
+.sow-submit-wrapper.sow-submit-styled{
+	text-align: center;
+	margin-bottom: 20px;
+}
+.so-widget-sow-contact-form-default-cb179854fa4e .sow-form-field input.sow-text-field,
+#sow-contact-form-field-ngy-chn-tham-gia-chng-trnh-562e687f3231b{
+	height: 40px;
+}
+
+@media (min-width: 992px){
+	#main .main-selects-issua .btn-submit-issua{
+		margin-top: 56px;
+	}
+}
+/*@import "assets/css/jquery.mCustomScrollbar.css";*/
